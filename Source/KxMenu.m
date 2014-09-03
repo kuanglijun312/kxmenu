@@ -89,17 +89,20 @@ const CGFloat kArrowSize = 12.f;
 @implementation KxMenuItem
 
 + (instancetype) menuItem:(NSString *) title
+                    value:(NSString*) value
                     image:(UIImage *) image
                    target:(id)target
                    action:(SEL) action
 {
     return [[KxMenuItem alloc] init:title
+                              value:value
                               image:image
                              target:target
                              action:action];
 }
 
 - (id) init:(NSString *) title
+      value:(NSString*) value
       image:(UIImage *) image
      target:(id)target
      action:(SEL) action
@@ -108,7 +111,7 @@ const CGFloat kArrowSize = 12.f;
     
     self = [super init];
     if (self) {
-        
+        _value = value;
         _title = title;
         _image = image;
         _target = target;
