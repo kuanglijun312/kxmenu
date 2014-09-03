@@ -74,11 +74,14 @@ const CGFloat kArrowSize = 12.f;
 
 - (void)singleTap:(UITapGestureRecognizer *)recognizer
 {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
     for (UIView *v in self.subviews) {
         if ([v isKindOfClass:[KxMenuView class]] && [v respondsToSelector:@selector(dismissMenu:)]) {
             [v performSelector:@selector(dismissMenu:) withObject:@(YES)];
         }
     }
+#pragma clang diagnostic pop
 }
 
 @end

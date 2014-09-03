@@ -115,31 +115,37 @@
     @[
       
       [KxMenuItem menuItem:@"ACTION MENU 1234456"
+                     value:@"1"
                      image:nil
                     target:nil
                     action:NULL],
             
       [KxMenuItem menuItem:@"Share this"
+                     value:@"1"
                      image:[UIImage imageNamed:@"action_icon"]
                     target:self
                     action:@selector(pushMenuItem:)],
       
       [KxMenuItem menuItem:@"Check this menu"
+                     value:@"1"
                      image:nil
                     target:self
                     action:@selector(pushMenuItem:)],
       
       [KxMenuItem menuItem:@"Reload page"
+                     value:@"1"
                      image:[UIImage imageNamed:@"reload"]
                     target:self
                     action:@selector(pushMenuItem:)],
       
       [KxMenuItem menuItem:@"Search"
+                     value:@"1"
                      image:[UIImage imageNamed:@"search_icon"]
                     target:self
                     action:@selector(pushMenuItem:)],
       
       [KxMenuItem menuItem:@"Go home"
+                     value:@"1"
                      image:[UIImage imageNamed:@"home_icon"]
                     target:self
                     action:@selector(pushMenuItem:)],
